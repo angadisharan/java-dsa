@@ -1,5 +1,7 @@
 package org.matools.java.dsa.window;
 
+import java.util.concurrent.Callable;
+
 public class FixedWindow {
 
     public static int maxSum(int[] arr, int k) {
@@ -16,6 +18,8 @@ public class FixedWindow {
             sum += arr[i] - arr[i - k];
             max = Math.max(max, sum);
         }
+
+        Callable o;
 
         return max;
     }
