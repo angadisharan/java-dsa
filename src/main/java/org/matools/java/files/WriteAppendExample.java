@@ -1,4 +1,4 @@
-package org.matools.java.file;
+package org.matools.java.files;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

@@ -13,7 +13,6 @@ public class ReadExample {
                 new ObjectInputStream(new FileInputStream("user.ser"));
 
 
-
         User user = (User) ois.readObject();
         ois.close();
 

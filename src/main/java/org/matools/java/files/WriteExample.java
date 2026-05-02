@@ -1,4 +1,4 @@
-package org.matools.java.file;
+package org.matools.java.files;
 
 import java.io.FileWriter;
 import java.io.IOException;
