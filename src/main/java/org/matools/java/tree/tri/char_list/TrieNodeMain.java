@@ -1,4 +1,4 @@
-package org.matools.java.tri.charlist;
+package org.matools.java.tree.tri.char_list;
 
 import java.util.HashMap;
 import java.util.Map;

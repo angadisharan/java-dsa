@@ -1,4 +1,4 @@
-package org.matools.java.tri.charascii;
+package org.matools.java.tree.tri.char_ascii;
 class TrieNode {
     TrieNode[] children = new TrieNode[26];
     boolean isEndOfWord;
