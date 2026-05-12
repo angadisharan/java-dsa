@@ -3,7 +3,7 @@ package org.matools.java.string;
 public class Permutation {
 
     public static void main(String[] args) {
-        String str = "ABCD";
+        String str = "ABC";
         permute(str.toCharArray(), 0);
     }
 
@@ -26,3 +26,17 @@ public class Permutation {
         arr[j] = temp;
     }
 }
+
+/*
+        i/p
+            ABC
+        
+        o/p
+            ABC
+            ACB
+            BAC
+            BCA
+            CBA
+            CAB
+
+ */
