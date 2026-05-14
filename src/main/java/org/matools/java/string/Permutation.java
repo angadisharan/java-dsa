@@ -30,7 +30,7 @@ public class Permutation {
 /*
         i/p
             ABC
-        
+
         o/p
             ABC
             ACB
