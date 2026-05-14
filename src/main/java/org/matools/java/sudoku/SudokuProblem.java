@@ -15,8 +15,6 @@ public class SudokuProblem {
 
                 if(board[i][j] == '.') {
 
-                    char validChar = '.';
-
                     for(char k = '1'; k <= '9' ; k++) {
 
                         if(isValid(i, j, k, board)) {
