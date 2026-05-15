@@ -1,26 +1,10 @@
 package org.matools.java.linkedlist.merge;
 
+import org.matools.java.linkedlist.ListNode;
+
 import java.util.PriorityQueue;
 
 public class MergeSortedLinkedListUsingPQ {
-
-    // Definition for singly-linked list
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
 
     public ListNode mergeKLists(ListNode[] lists) {
 
@@ -53,19 +37,7 @@ public class MergeSortedLinkedListUsingPQ {
         return dummy.next;
     }
 
-    // Utility method to create linked list
-    public static ListNode createList(int[] values) {
 
-        ListNode dummy = new ListNode(0);
-        ListNode current = dummy;
-
-        for (int value : values) {
-            current.next = new ListNode(value);
-            current = current.next;
-        }
-
-        return dummy.next;
-    }
 
     // Utility method to print linked list
     public static void printList(ListNode head) {
@@ -86,9 +58,9 @@ public class MergeSortedLinkedListUsingPQ {
 
     public static void main(String[] args) {
 
-        ListNode list1 = createList(new int[]{1, 4, 5});
-        ListNode list2 = createList(new int[]{1, 3, 4});
-        ListNode list3 = createList(new int[]{2, 6});
+        ListNode list1 = ListNode.createList(new int[]{1, 4, 5});
+        ListNode list2 = ListNode.createList(new int[]{1, 3, 4});
+        ListNode list3 = ListNode.createList(new int[]{2, 6});
 
         ListNode[] lists = {list1, list2, list3};
 
